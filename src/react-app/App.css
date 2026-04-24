@@ -1,5 +1,15 @@
 * {
 	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+a, button {
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible, button:focus-visible {
+	outline: 3px solid #000;
 }
 
 #root {

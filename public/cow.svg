@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- horns -->
+  <rect x="9" y="2" width="4" height="6" rx="2" fill="#f5d08a"/>
+  <rect x="19" y="2" width="4" height="6" rx="2" fill="#f5d08a"/>
+  <!-- ears -->
+  <ellipse cx="5" cy="13" rx="4" ry="5" fill="white" stroke="black" stroke-width="1.5"/>
+  <ellipse cx="5" cy="13" rx="2" ry="3" fill="#ffb3c1"/>
+  <ellipse cx="27" cy="13" rx="4" ry="5" fill="white" stroke="black" stroke-width="1.5"/>
+  <ellipse cx="27" cy="13" rx="2" ry="3" fill="#ffb3c1"/>
+  <!-- head -->
+  <ellipse cx="16" cy="17" rx="12" ry="13" fill="white" stroke="black" stroke-width="1.5"/>
+  <!-- spots -->
+  <ellipse cx="11" cy="11" rx="3" ry="2.5" fill="#222" transform="rotate(-15 11 11)"/>
+  <ellipse cx="21" cy="10" rx="2" ry="2" fill="#222"/>
+  <!-- eyes -->
+  <circle cx="12" cy="15" r="2" fill="#222"/>
+  <circle cx="20" cy="15" r="2" fill="#222"/>
+  <circle cx="12.7" cy="14.3" r="0.6" fill="white"/>
+  <circle cx="20.7" cy="14.3" r="0.6" fill="white"/>
+  <!-- nose -->
+  <ellipse cx="16" cy="22" rx="5" ry="3.5" fill="#ffb3c1" stroke="black" stroke-width="1"/>
+  <circle cx="14" cy="22" r="1.2" fill="#e07090"/>
+  <circle cx="18" cy="22" r="1.2" fill="#e07090"/>
+</svg>
