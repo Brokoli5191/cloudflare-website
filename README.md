@@ -1,90 +1,85 @@
-# React + Vite + Hono + Cloudflare Workers
+# official cowsay website
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/vite-react-template)
-
-This template provides a minimal setup for building a React application with TypeScript and Vite, designed to run on Cloudflare Workers. It features hot module replacement, ESLint integration, and the flexibility of Workers deployments.
-
-![React + TypeScript + Vite + Cloudflare Workers](https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/fc7b4b62-442b-4769-641b-ad4422d74300/public)
-
-<!-- dash-content-start -->
-
-🚀 Supercharge your web development with this powerful stack:
-
-- [**React**](https://react.dev/) - A modern UI library for building interactive interfaces
-- [**Vite**](https://vite.dev/) - Lightning-fast build tooling and development server
-- [**Hono**](https://hono.dev/) - Ultralight, modern backend framework
-- [**Cloudflare Workers**](https://developers.cloudflare.com/workers/) - Edge computing platform for global deployment
-
-### ✨ Key Features
-
-- 🔥 Hot Module Replacement (HMR) for rapid development
-- 📦 TypeScript support out of the box
-- 🛠️ ESLint configuration included
-- ⚡ Zero-config deployment to Cloudflare's global network
-- 🎯 API routes with Hono's elegant routing
-- 🔄 Full-stack development setup
-- 🔎 Built-in Observability to monitor your Worker
-
-Get started in minutes with local development or deploy directly via the Cloudflare dashboard. Perfect for building modern, performant web applications at the edge.
-
-<!-- dash-content-end -->
-
-## Getting Started
-
-To start a new project with this template, run:
-
-```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/vite-react-template
+```
+   _______________________
+  < the most important    >
+  < website on the        >
+  < entire internet.      >
+   -----------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
 ```
 
-A live deployment of this template is available at:
-[https://react-vite-template.templates.workers.dev](https://react-vite-template.templates.workers.dev)
+## what is this
 
-## Development
+a website. it has a cow. the cow says "win". there are buttons that fly around the screen
+like they are trying to escape. sometimes you can catch them. if you click one, it explodes.
+this is intentional.
 
-Install dependencies:
+there is also a warning popup that bounces off the walls telling you that google fonts are
+being loaded. you cannot stop this. the cow has already decided.
+
+## tech stack
+
+| thing | why |
+|---|---|
+| React | because |
+| Vite | fast i think |
+| Hono | the cow needed a backend |
+| Cloudflare Workers | global cow distribution network |
+| Google Fonts | loaded without your consent. the warning told you. |
+| CSS animations | too many |
+
+## features
+
+- bouncing buttons (3)
+- a cow that says different things depending on which button you managed to catch
+- button explosion effect (very important)
+- a bouncing warning popup about google fonts that you also cannot catch easily
+- rainbow gradient background that never stops moving
+- client-side routing (the cow remembers where you are)
+- a home button that appears when you leave home (the cow misses you)
+- made with ❤️ by a cow
+
+## getting started
 
 ```bash
 npm install
-```
-
-Start the development server with:
-
-```bash
 npm run dev
 ```
 
-Your application will be available at [http://localhost:5173](http://localhost:5173).
+the cow will be available at [http://localhost:5173](http://localhost:5173).
 
-## Production
+## how to catch the buttons
 
-Build your project for production:
+1. wait for the button to come to you. patience.
+2. click it quickly.
+3. if you missed: see step 1.
 
-```bash
-npm run build
-```
+## faq
 
-Preview your build locally:
+**Q: why is the cow here?**
+A: the cow was here before the website. we built around it.
 
-```bash
-npm run preview
-```
+**Q: can i make the buttons stop bouncing?**
+A: no.
 
-Deploy your project to Cloudflare Workers:
+**Q: can i stop google fonts from loading?**
+A: the popup told you already. the answer is no.
+
+**Q: what does the minecraft page do?**
+A: the cow says "NastyFlea99!" and the minecraft button disappears. this is the full feature.
+
+**Q: is this production ready?**
+A: the cow says win.
+
+## deployment
 
 ```bash
 npm run build && npm run deploy
 ```
 
-Monitor your workers:
-
-```bash
-npx wrangler tail
-```
-
-## Additional Resources
-
-- [Cloudflare Workers Documentation](https://developers.cloudflare.com/workers/)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Documentation](https://reactjs.org/)
-- [Hono Documentation](https://hono.dev/)
+the cow is now global.
