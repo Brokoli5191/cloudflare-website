@@ -1,19 +1,28 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
-export default function Warning() {
-	const [visible, setVisible] = useState(true);
+interface Props {
+	startX?: number;
+	startY?: number;
+	onDismiss: () => void;
+	onDuplicate: () => void;
+}
+
+export default function Warning({ startX = 60, startY = 60, onDismiss, onDuplicate }: Props) {
 	const boxRef = useRef<HTMLDivElement>(null);
 	const raf    = useRef<number>(0);
 
 	useEffect(() => {
 		const el = boxRef.current;
-		if (!el || !visible) return;
+		if (!el) return;
 
 		const pos = {
-			x: Math.min(60, window.innerWidth  - 200),
-			y: Math.min(60, window.innerHeight - 150),
+			x: Math.min(startX, window.innerWidth  - 200),
+			y: Math.min(startY, window.innerHeight - 150),
 		};
-		const vel = { x: 0.8, y: 0.65 };
+		const vel = {
+			x: (Math.random() > 0.5 ? 1 : -1) * (0.7 + Math.random() * 0.4),
+			y: (Math.random() > 0.5 ? 1 : -1) * (0.5 + Math.random() * 0.4),
+		};
 
 		el.style.left = pos.x + "px";
 		el.style.top  = pos.y + "px";
@@ -36,15 +45,14 @@ export default function Warning() {
 
 		raf.current = requestAnimationFrame(step);
 		return () => cancelAnimationFrame(raf.current);
-	}, [visible]);
-
-	if (!visible) return null;
+	}, []);  // eslint-disable-line react-hooks/exhaustive-deps
 
 	return (
-		<div ref={boxRef} className="warning-popup" style={{ position: "fixed", left: 60, top: 60 }}>
-			<p className="warning-title">Warnung!</p>
+		<div ref={boxRef} className="warning-popup" style={{ position: "fixed", left: startX, top: startY }}>
+			<button className="warning-x" onClick={onDuplicate} aria-label="close">✕</button>
+			<p className="warning-title">Warning!</p>
 			<p className="warning-text">This website uses Google Fonts. You can't stop it.</p>
-			<button className="warning-ok" onClick={() => setVisible(false)}>ok i agree</button>
+			<button className="warning-ok" onClick={onDismiss}>ok i agree</button>
 		</div>
 	);
 }

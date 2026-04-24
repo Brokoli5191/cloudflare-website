@@ -157,9 +157,24 @@ a:focus-visible, button:focus-visible {
 	border-radius: 16px;
 	box-shadow: 5px 5px 0 #000;
 	padding: 1rem 1.25rem;
+	padding-top: 1.75rem;
 	width: 240px;
 	text-align: center;
 	font-family: "Nunito", sans-serif;
+}
+
+.warning-x {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	background: none;
+	border: none;
+	font-size: 1rem;
+	font-weight: 900;
+	cursor: pointer;
+	line-height: 1;
+	color: #111;
+	padding: 0;
 }
 
 .warning-title {
@@ -202,6 +217,9 @@ a:focus-visible, button:focus-visible {
 	color: #fff;
 	text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
 	margin: 0;
+	cursor: default;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 /* --- mobile --- */
