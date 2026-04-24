@@ -71,7 +71,7 @@ A: no.
 A: the popup told you already. the answer is no.
 
 **Q: what does the minecraft page do?**
-A: the cow says "NastyFlea99!" and the minecraft button disappears. this is the full feature.
+A: the cow says "NastyFlea99" and the minecraft button disappears. this is the full feature.
 
 **Q: is this production ready?**
 A: the cow says win.

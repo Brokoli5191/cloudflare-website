@@ -22,7 +22,7 @@ function makeCow(msg: string) {
 type Link = { label: string; href: string; cls: string; msg: string; ix: number; iy: number; vx: number; vy: number };
 
 const ALL_LINKS: Link[] = [
-	{ label: "Minecraft", href: "/minecraft", cls: "btn-green",  msg: "NastyFlea99!",    ix: 80,  iy: 80,  vx: 0.7,  vy: 0.5  },
+	{ label: "Minecraft", href: "/minecraft", cls: "btn-green",  msg: "NastyFlea99",    ix: 80,  iy: 80,  vx: 0.7,  vy: 0.5  },
 	{ label: "Projects",  href: "/Projects",  cls: "btn-blue",   msg: "github.com/brokoli5191",  ix: 320, iy: 220, vx: -0.6, vy: 0.8  },
 	{ label: "About",     href: "/about",     cls: "btn-pink",   msg: "i am a cow!", ix: 150, iy: 420, vx: 0.5,  vy: -0.7 },
 ];
