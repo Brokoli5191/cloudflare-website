@@ -9,7 +9,10 @@ export default function Warning() {
 		const el = boxRef.current;
 		if (!el || !visible) return;
 
-		const pos = { x: 60, y: 60 };
+		const pos = {
+			x: Math.min(60, window.innerWidth  - 200),
+			y: Math.min(60, window.innerHeight - 150),
+		};
 		const vel = { x: 0.8, y: 0.65 };
 
 		el.style.left = pos.x + "px";

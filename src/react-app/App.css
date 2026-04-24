@@ -4,6 +4,7 @@
 
 #root {
 	min-height: 100vh;
+	min-height: 100dvh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -56,6 +57,8 @@
 	color: #333;
 	box-shadow: 6px 6px 0 #ffd93d, 12px 12px 0 #6bcb77;
 	animation: float 4s ease-in-out infinite;
+	max-width: calc(100vw - 3rem);
+	overflow-x: auto;
 }
 
 @keyframes float {
@@ -77,6 +80,8 @@
 	display: inline-block;
 	cursor: pointer;
 	user-select: none;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
 	transition: transform 0.08s, box-shadow 0.08s;
 	white-space: nowrap;
 }
@@ -187,4 +192,45 @@
 	color: #fff;
 	text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
 	margin: 0;
+}
+
+/* --- mobile --- */
+
+@media (max-width: 600px) {
+	.title {
+		font-size: 2rem;
+		text-shadow: 2px 2px 0 #ff6b6b, 4px 4px 0 #ffd93d, 6px 6px 0 #6bcb77;
+	}
+
+	.cowsay {
+		font-size: 0.72rem;
+		padding: 1rem 1.25rem;
+		border-radius: 14px;
+		box-shadow: 4px 4px 0 #ffd93d, 8px 8px 0 #6bcb77;
+	}
+
+	.nav-btn {
+		font-size: 1rem;
+		padding: 0.75rem 1.5rem;
+		border-width: 3px;
+		box-shadow: 3px 3px 0 #000;
+	}
+
+	.warning-popup {
+		width: 190px;
+		padding: 0.75rem 1rem;
+	}
+
+	.warning-title {
+		font-size: 1rem;
+	}
+
+	.warning-text {
+		font-size: 0.72rem;
+	}
+
+	.container {
+		padding: 1.25rem;
+		gap: 1rem;
+	}
 }

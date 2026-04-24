@@ -19,13 +19,16 @@ export default function BouncingButton({ label, href, cls, onClick, initialX, in
 		const el = ref.current;
 		if (!el) return;
 
-		const pos = { x: initialX, y: initialY };
+		const clampX = Math.max(0, Math.min(initialX, window.innerWidth  - 160));
+		const clampY = Math.max(0, Math.min(initialY, window.innerHeight - 60));
+		const pos = { x: clampX, y: clampY };
 		const vel = { x: velX, y: velY };
 
 		el.style.left = pos.x + "px";
 		el.style.top  = pos.y + "px";
 
 		function step() {
+			// re-clamp on resize (orientation change etc.)
 			const maxX = window.innerWidth  - el!.offsetWidth;
 			const maxY = window.innerHeight - el!.offsetHeight;
 
